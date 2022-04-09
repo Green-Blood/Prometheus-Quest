@@ -1,8 +1,12 @@
+using Enums;
 using UnityEngine;
 
-public class Obstacle : MonoBehaviour
+namespace Obstacles
 {
-    [SerializeField] private bool isRedObstacle;
+    public sealed class Obstacle : MonoBehaviour
+    {
+        [SerializeField] private ObstacleEnum obstacleEnum;
 
-    public bool IsRedObstacle => isRedObstacle;
+        public ObstacleEnum ObstacleEnum => obstacleEnum;
+    }
 }

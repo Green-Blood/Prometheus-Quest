@@ -1,72 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd4a0ea4-cecf-4373-9af3-03ea22bb584f" name="Changes" comment="">
+    <list default="true" id="dd4a0ea4-cecf-4373-9af3-03ea22bb584f" name="Changes" comment="Update: Smooth movement and objec'ts ui are added">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDeath.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDeath.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMove.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Prometheus-Quest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Prometheus-Quest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Capsule.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Capsule.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Green Circle.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Green Circle.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Red Circle .prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Red Circle .prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishPoint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishPoint.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RestartGame.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RestartGame.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_1_transition_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_1_transition_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_2_transition_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_2_transition_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_3_transition_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_3_transition_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_4_transition_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_4_transition_5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_5_transition_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_5_transition_6.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_6.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_6_transition_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_6_transition_7.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_start.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_start.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_top.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/cloud_big_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/cloud_big_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/cloud_big_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/cloud_big_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/cloud_small_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/cloud_small_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/cloud_small_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/cloud_small_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/clouds_distance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/clouds_distance.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/olymp_cloud_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/olymp_cloud_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/olymp_cloud_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/olymp_cloud_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/olymp_cloud_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/olymp_cloud_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/olymp_cloud_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/olymp_cloud_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/star.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/FinishPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/FinishPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameLoop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameLoop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacles/ObstacleGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/ObstacleGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Objects/cap_of_hades.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Objects/cap_of_hades.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,14 +34,30 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="49a97e0d-05d0-4f39-ae1e-1581d57b0e9f" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.5/Tests/Tests/Shared/TestQuaternion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/PaintableGrid.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ObjectsUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/ObstacleGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/LightningStrike.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.6.4/Runtime/BurstCompiler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e2ca49f59f2543c489938048668a63fd157200/c2/a0993192/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e2ca49f59f2543c489938048668a63fd157200/79/cd4f2c28/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/WinLose.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_MeshUtilities.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/PickedUpObjects.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -139,7 +108,7 @@
       <updated>1649083906469</updated>
       <workItem from="1649083918202" duration="7479000" />
       <workItem from="1649315990067" duration="1371000" />
-      <workItem from="1649488046402" duration="6218000" />
+      <workItem from="1649488046402" duration="16537000" />
     </task>
     <task id="LOCAL-00001" summary="Update: Base logic">
       <created>1649090714655</created>
@@ -162,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649316013241</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update: Smooth movement and objec'ts ui are added">
+      <created>1649496564886</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649496564886</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +163,7 @@
     <MESSAGE value="Update: Base logic" />
     <MESSAGE value="Apk" />
     <MESSAGE value="Update: background assets are added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: background assets are added" />
+    <MESSAGE value="Update: Smooth movement and objec'ts ui are added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Smooth movement and objec'ts ui are added" />
   </component>
 </project>
