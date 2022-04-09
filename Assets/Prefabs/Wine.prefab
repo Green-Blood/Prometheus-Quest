@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4301928327937784550}
   - component: {fileID: 5708847291876299812}
   - component: {fileID: 7432147638499112521}
-  - component: {fileID: 8850716041653272498}
+  - component: {fileID: 4355256380384897211}
   m_Layer: 0
-  m_Name: 'Red Circle '
+  m_Name: Wine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.8867924, g: 0.056640554, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8a1fc9ce81c384d8f99804ac27e748d4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isRedObstacle: 1
---- !u!58 &8850716041653272498
-CircleCollider2D:
+--- !u!61 &4355256380384897211
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -112,6 +112,16 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.012135804, y: -0.06674737}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.9, y: 1.72}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1.0504867, y: 1.0525259}
+  m_EdgeRadius: 0

@@ -1,35 +1,20 @@
 using System;
 using System.Collections;
-using TMPro;
 using UnityEngine;
 
 public sealed class Character : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D characterRigidBody;
     [SerializeField] private float defaultFlySpeed = 5f;
     [SerializeField] private float flySpeedModifier = 2f;
     [SerializeField] private float flySpeedModifierTime = 1f;
-    [SerializeField] private int time = 15;
-    [SerializeField] private TextMeshProUGUI timeText;
-    [SerializeField] private GameObject losePanel;
-    [SerializeField] private GameObject winPanel;
 
     private int _direction = 1;
     private float _currentSpeed;
     private bool _canClick;
     private Obstacle _obstacle;
     private float _currentTime;
-    private bool _isWin;
 
-    private void Awake()
-    {
-        _currentSpeed = defaultFlySpeed;
-    }
-
-    private void Start()
-    {
-        StartCoroutine(Timer());
-    }
+    private void Awake() => _currentSpeed = defaultFlySpeed;
 
     private void Update()
     {
@@ -44,70 +29,56 @@ public sealed class Character : MonoBehaviour
         }
     }
 
-    IEnumerator Timer()
-    {
-        while (time > 0)
-        {
-            TimeCount();
-            yield return new WaitForSeconds(1);
-        }
-
-        if (!_isWin)
-        {
-            losePanel.SetActive(true);
-        }
-    }
-
-    private void TimeCount()
-    {
-        time -= 1;
-        timeText.text = time.ToString();
-    }
-
-    public void ChangeDirection() => _direction *= -1;
-
-    private void Move()
-    {
-        transform.Translate((Vector3.up * _direction * _currentSpeed) * Time.deltaTime, Space.World);
-    }
+    private void Move() => transform.Translate((Vector3.up * _direction * _currentSpeed) * Time.deltaTime, Space.World);
 
     private void IncreaseSpeed()
     {
         _currentSpeed = defaultFlySpeed * flySpeedModifier;
         Debug.Log("Current speed is " + _currentSpeed);
-        SetTimer();
+        StartTimer();
     }
 
     private void DecreaseSpeed()
     {
         _currentSpeed = defaultFlySpeed / flySpeedModifier;
         Debug.Log("Current speed is " + _currentSpeed);
-        SetTimer();
+        StartTimer();
     }
 
-    private void ResetSpeed() => _currentSpeed = defaultFlySpeed;
 
-    private void SetTimer() => _currentTime = flySpeedModifierTime;
+    private void StartTimer()
+    {
+        _currentTime = flySpeedModifierTime;
+    }
+
+
+    private void ResetSpeed()
+    {
+        if(Math.Abs(_currentSpeed - defaultFlySpeed) < 0.1f) return;
+        Debug.Log("Current speed is "  + _currentSpeed);
+        if (_currentSpeed > defaultFlySpeed)
+        {
+            _currentSpeed -= Time.deltaTime;
+        }
+        else
+        {
+            _currentSpeed += Time.deltaTime;
+        }
+    }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         _canClick = true;
-        other.TryGetComponent(typeof(Obstacle), out var obstacle);
+        other.TryGetComponent(out Obstacle obstacle);
         {
-            _obstacle = obstacle as Obstacle;
+            _obstacle = obstacle;
         }
-        other.TryGetComponent(typeof(FinishPoint), out var finishPoint);
-        {
-            if (finishPoint != null)
-            {
-                ChangeDirection();
-                var _finishPoint = finishPoint as FinishPoint; 
-                if (_finishPoint.IsStart)
-                {
-                    winPanel.SetActive(true);
-                }
-            }
-        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        _canClick = true;
     }
 
 
@@ -130,4 +101,6 @@ public sealed class Character : MonoBehaviour
             IncreaseSpeed();
         }
     }
+
+    public void ChangeDirection() => _direction *= -1;
 }
