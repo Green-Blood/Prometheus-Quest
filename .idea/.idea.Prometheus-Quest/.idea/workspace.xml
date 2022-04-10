@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd4a0ea4-cecf-4373-9af3-03ea22bb584f" name="Changes" comment="1">
+    <list default="true" id="dd4a0ea4-cecf-4373-9af3-03ea22bb584f" name="Changes" comment="Build">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Prometheus-Quest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Prometheus-Quest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +95,7 @@
       <updated>1649083906469</updated>
       <workItem from="1649083918202" duration="7479000" />
       <workItem from="1649315990067" duration="1371000" />
-      <workItem from="1649488046402" duration="29742000" />
+      <workItem from="1649488046402" duration="30901000" />
     </task>
     <task id="LOCAL-00001" summary="Update: Base logic">
       <created>1649090714655</created>
@@ -186,7 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649590474897</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Build">
+      <created>1649594155273</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1649594155273</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Build">
+      <created>1649594171218</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1649594171218</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,13 +230,13 @@
     <MESSAGE value="Update: Smooth movement and objec'ts ui are added" />
     <MESSAGE value="Pick up objects are added" />
     <MESSAGE value="Update: animations are added" />
-    <MESSAGE value="Build" />
     <MESSAGE value="WebGL build" />
     <MESSAGE value="webgl builds" />
     <MESSAGE value="Build name change" />
     <MESSAGE value="Name change" />
     <MESSAGE value="WebGl build" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="Build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build" />
   </component>
 </project>
