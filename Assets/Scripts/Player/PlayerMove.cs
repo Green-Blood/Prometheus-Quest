@@ -8,17 +8,19 @@ namespace Player
         private readonly float _defaultFlySpeed;
         private readonly float _flySpeedModifierTime;
         private readonly float _flySpeedModifier;
+        private readonly GameAudio _gameAudio;
 
         private float _currentTime;
 
 
         public float CurrentSpeed { get; private set; }
 
-        public PlayerMove(float defaultFlySpeed, float flySpeedModifierTime, float flySpeedModifier)
+        public PlayerMove(float defaultFlySpeed, float flySpeedModifierTime, float flySpeedModifier, GameAudio gameAudio)
         {
             _defaultFlySpeed = defaultFlySpeed;
             _flySpeedModifierTime = flySpeedModifierTime;
             _flySpeedModifier = flySpeedModifier;
+            _gameAudio = gameAudio;
             CurrentSpeed = defaultFlySpeed;
         }
 
@@ -37,12 +39,14 @@ namespace Player
         public void IncreaseSpeed()
         {
             CurrentSpeed = _defaultFlySpeed * _flySpeedModifier;
+            _gameAudio.PlaySound(SoundsEnum.GoUp);
             StartTimer();
         }
 
         public void DecreaseSpeed()
         {
             CurrentSpeed = _defaultFlySpeed / _flySpeedModifier;
+            _gameAudio.PlaySound(SoundsEnum.GoDown);
             StartTimer();
         }
 

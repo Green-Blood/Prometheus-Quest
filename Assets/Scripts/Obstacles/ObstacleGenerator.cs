@@ -27,13 +27,13 @@ namespace Obstacles
         private void GenerateObstacles()
         {
             var distance = transform.position.y + startDistance;
-            while (distance < finishPoint.transform.position.y)
+            while (distance < finishPoint.transform.position.y - startDistance)
             {
                 float randomDistanceBetweenObjects = Random.Range(minDistance, maxDistance);
                 int random = WeightedRandom.GetRandomWeightedIndex(weightedRandomValues);
+
+                if (distance >= finishPoint.transform.position.y - startDistance) continue;
                 InstantiateObject(random, distance, randomDistanceBetweenObjects);
-
-
                 distance += randomDistanceBetweenObjects;
             }
         }

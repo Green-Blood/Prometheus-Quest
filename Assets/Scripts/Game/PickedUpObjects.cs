@@ -7,11 +7,13 @@ namespace Game
     {
         private readonly List<PickUpObject> _pickupObjects;
         private readonly ObjectsUI _objectsUI;
+        private readonly GameAudio _gameAudio;
 
-        public PickedUpObjects(ObjectsUI objectsUI)
+        public PickedUpObjects(ObjectsUI objectsUI, GameAudio gameAudio)
         {
             _pickupObjects = new List<PickUpObject>();
             _objectsUI = objectsUI;
+            _gameAudio = gameAudio;
         }
 
         public void Add(PickUpObject pickUpObject)
@@ -19,6 +21,7 @@ namespace Game
             _pickupObjects.Add(pickUpObject);
             var index = _pickupObjects.IndexOf(pickUpObject);
             _objectsUI.ShowObject(index, pickUpObject.PickUpEnum);
+            _gameAudio.PlaySound(SoundsEnum.PickUp);
         }
 
         public void Remove(PickUpObject pickUpObject)

@@ -19,8 +19,13 @@ namespace Game
         [SerializeField] private float flySpeedModifierTime = 1f;
         [BoxGroup("Player Parameters ")] [GUIColor(1f, 0f, 0f)]
         [SerializeField] private int playerHealth = 3;
-        [BoxGroup("Player Parameters ")] [GUIColor(1f, 0f, 0f)]
+
+        [BoxGroup("Lightning Parameters ")] [GUIColor(1f, 0f, 0f)]
         [SerializeField] private int lightningStrikeLimit = 5;
+        [BoxGroup("Lightning Parameters ")] [GUIColor(1f, 0f, 0f)]
+        [SerializeField] private int lightningMinDelayTime = 5;
+        [BoxGroup("Lightning Parameters ")] [GUIColor(1f, 0f, 0f)]
+        [SerializeField] private int lightningMaxDelayTime = 10;
 
         [Title("References")]
         [SerializeField] private Timer timer;
@@ -30,6 +35,7 @@ namespace Game
         [SerializeField] private ClickArea clickArea;
         [SerializeField] private ObjectsUI objectsUI;
         [SerializeField] private LightningBolt lightningBolt;
+        [SerializeField] private GameAudio gameAudio;
 
         private Events _events;
         private PlayerMove _playerMove;
@@ -43,16 +49,16 @@ namespace Game
         private void Awake()
         {
             _events = Events.Instance;
-            _playerMove = new PlayerMove(defaultFlySpeed, flySpeedModifierTime, flySpeedModifier);
-            winLose.Init(_playerMove);
+            _playerMove = new PlayerMove(defaultFlySpeed, flySpeedModifierTime, flySpeedModifier, gameAudio);
+            winLose.Init(_playerMove, gameAudio);
             objectsUI.Init();
 
             _playerDeath = new PlayerDeath(winLose);
             _playerHealth = new PlayerHealth(playerHealth, _playerDeath);
-            _pickedUpObjects = new PickedUpObjects(objectsUI);
-            _lightningStrike = new LightningStrike(lightningStrikeLimit, _playerHealth, _pickedUpObjects, lightningBolt, character);
+            _pickedUpObjects = new PickedUpObjects(objectsUI, gameAudio);
+            _lightningStrike = new LightningStrike(lightningStrikeLimit, _playerHealth, _pickedUpObjects, lightningBolt, character, winLose, gameAudio);
 
-            character.Init(_playerMove, _playerHealth, _lightningStrike);
+            character.Init(_playerMove, _playerHealth, _lightningStrike, gameAudio);
             livesUI.Init(_playerHealth, playerHealth);
             clickArea.Init(character, _pickedUpObjects);
         }
@@ -61,9 +67,12 @@ namespace Game
         {
             _events.OnCharacterEnter += OnCharacterEnter;
             StartCoroutine(timer.TimerCoroutine(time, OnTimerFinished));
+            _lightningStrike.StartRandomStrikes(lightningMinDelayTime, lightningMaxDelayTime);
         }
 
         private void OnCharacterEnter() => winLose.WinGame();
         private void OnTimerFinished() => winLose.LoseGame();
     }
+
+    
 }

@@ -17,16 +17,18 @@ namespace Player
         private PlayerMove _playerMove;
         private PlayerHealth _playerHealth;
         private LightningStrike _lightningStrike;
+        private GameAudio _gameAudio;
         private static readonly int IsUp = Animator.StringToHash("IsUp");
         private static readonly int Strike = Animator.StringToHash("Strike");
         public int Direction { get; private set; } = 1;
         public PickUpObject PickUpObject { get; private set; }
 
-        public void Init(PlayerMove playerMove, PlayerHealth playerHealth, LightningStrike lightningStrike)
+        public void Init(PlayerMove playerMove, PlayerHealth playerHealth, LightningStrike lightningStrike, GameAudio gameAudio)
         {
             _playerMove = playerMove;
             _playerHealth = playerHealth;
             _lightningStrike = lightningStrike;
+            _gameAudio = gameAudio;
         }
 
         private void Update()
@@ -63,7 +65,12 @@ namespace Player
             CanClick = false;
         }
 
-        public void ChangeDirection() => Direction *= -1;
+        public void ChangeDirection()
+        {
+            Direction *= -1;
+            _gameAudio.PlaySound(SoundsEnum.ZeusSCream);
+        }
+
         public void ChangeAnimation()
         {
             animator.SetBool(IsUp, false);
