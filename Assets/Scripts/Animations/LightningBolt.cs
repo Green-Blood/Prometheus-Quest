@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Threading.Tasks;
 using Player;
 using UnityEngine;
@@ -10,12 +11,16 @@ namespace Animations
         [SerializeField] private Vector3 offset;
         [SerializeField] private Character character;
 
-        public async Task PlayLightningAnimation()
+        public void PlayLightningAnimation()
         {
             transform.position = character.transform.position + offset;
-            
             lightningBolt.SetActive(true);
-            await Task.Delay(1000);
+            StartCoroutine(CloseLightning());
+        }
+
+        private IEnumerator CloseLightning()
+        {
+            yield return new WaitForSeconds(1);
             lightningBolt.gameObject.SetActive(false);
         }
     }

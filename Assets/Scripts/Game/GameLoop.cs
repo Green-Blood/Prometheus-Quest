@@ -66,8 +66,8 @@ namespace Game
         private void Start()
         {
             _events.OnCharacterEnter += OnCharacterEnter;
-            StartCoroutine(timer.TimerCoroutine(time, OnTimerFinished));
-            _lightningStrike.StartRandomStrikes(lightningMinDelayTime, lightningMaxDelayTime);
+            StartCoroutine(timer.TimerCoroutine(time, OnTimerFinished)); 
+            StartCoroutine(_lightningStrike.StartRandomStrikes(lightningMinDelayTime, lightningMaxDelayTime));
         }
 
         private void OnCharacterEnter() => winLose.WinGame();

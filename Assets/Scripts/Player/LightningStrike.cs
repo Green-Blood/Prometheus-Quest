@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Animations;
 using Game;
@@ -29,29 +31,33 @@ namespace Player
             _gameAudio = gameAudio;
         }
 
-        public async void StartRandomStrikes(float minTimeBetweenStrikes, float maxTimeBetweenStrikes)
+        public IEnumerator StartRandomStrikes(float minTimeBetweenStrikes, float maxTimeBetweenStrikes)
         {
             while (_winLose.IsGameRunning)
             {
                 float time = Random.Range(minTimeBetweenStrikes, maxTimeBetweenStrikes);
-                await Task.Delay((int) time * 1000);
-                await Strike();
+                yield return new WaitForSeconds(time);
+                 Strike();
             }
         }
 
-        public async void IncreaseStrikeCount()
+        public void IncreaseStrikeCount()
         {
             _strikes++;
-            if (_strikes < _strikeLimit) return;
+            if (_strikes < _strikeLimit)
+            {
+                return;
+            }
             ResetStrikes();
-            await Strike();
+            Strike();
         }
 
-        private async Task Strike()
+        private void Strike()
         {
             _character.StartStrikeAnimation();
             _gameAudio.PlaySound(SoundsEnum.Lightning);
-            await _lightningBolt.PlayLightningAnimation();
+             _lightningBolt.PlayLightningAnimation();
+
 
             if (!_pickedUpObjects.UsePickedUpObject())
             {
