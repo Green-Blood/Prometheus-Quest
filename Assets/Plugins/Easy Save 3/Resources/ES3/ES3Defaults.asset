@@ -31,12 +31,12 @@ MonoBehaviour:
     assemblyNames:
     - Assembly-CSharp-firstpass
     - LunarConsole
-    - Sirenix.OdinInspector.CompatibilityLayer
     - Assembly-CSharp
     - Cinemachine
+    - Sirenix.OdinInspector.CompatibilityLayer
     - PsdPlugin
-    - LunarConsoleEditor
     - Sirenix.OdinInspector.CompatibilityLayer.Editor
+    - LunarConsoleEditor
     - Sirenix.OdinInspector.Modules.UnityMathematics
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
