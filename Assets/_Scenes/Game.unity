@@ -1205,7 +1205,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -92.3, y: -81.8}
+  m_AnchoredPosition: {x: -92.29999, y: -81.79999}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &310231759
@@ -2610,7 +2610,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7784091, y: 1}
+    m_SensorSize: {x: 0.5625, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5881,17 +5881,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lightning bolt
       objectReference: {fileID: 0}
+    - target: {fileID: 6607095574711416147, guid: d2b972d3ccd7642daa5cd16a71e811c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6607095574711416158, guid: d2b972d3ccd7642daa5cd16a71e811c2, type: 3}
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6607095574711416158, guid: d2b972d3ccd7642daa5cd16a71e811c2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2706636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607095574711416158, guid: d2b972d3ccd7642daa5cd16a71e811c2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2706636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607095574711416158, guid: d2b972d3ccd7642daa5cd16a71e811c2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2706636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607095574711416158, guid: d2b972d3ccd7642daa5cd16a71e811c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 6607095574711416158, guid: d2b972d3ccd7642daa5cd16a71e811c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.03
       objectReference: {fileID: 0}
     - target: {fileID: 6607095574711416158, guid: d2b972d3ccd7642daa5cd16a71e811c2, type: 3}
       propertyPath: m_LocalPosition.z
