@@ -70,7 +70,7 @@ namespace Game
         private void Start()
         {
             _events.OnCharacterEnter += OnCharacterEnter;
-            _events.OnCharacterEnter += StartLightning;
+            _events.OnCharacterGetToTheTop += StartLightning;
             StartCoroutine(timer.TimerCoroutine(time, OnTimerFinished));
         }
 

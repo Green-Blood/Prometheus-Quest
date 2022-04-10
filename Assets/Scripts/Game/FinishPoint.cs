@@ -15,7 +15,11 @@ namespace Game
             {
                 character.ChangeDirection();
                 character.ChangeAnimation();
-                if (IsStart) Events.Instance.OnCharacterEnter?.Invoke();
+                Events.Instance.OnCharacterGetToTheTop?.Invoke();
+                if (IsStart)
+                {
+                    Events.Instance.OnCharacterEnter?.Invoke();
+                }
             }
         }
     }
