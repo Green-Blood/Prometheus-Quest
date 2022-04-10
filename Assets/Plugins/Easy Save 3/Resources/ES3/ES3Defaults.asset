@@ -29,14 +29,33 @@ MonoBehaviour:
     referenceMode: 2
     serializationDepthLimit: 64
     assemblyNames:
+    - MoreMountains.Feedbacks
     - Assembly-CSharp-firstpass
     - LunarConsole
-    - Cinemachine
-    - Sirenix.OdinInspector.CompatibilityLayer
+    - MoreMountains.Tools.Cinemachine
+    - MoreMountains.Feel.Demos
+    - MoreMountains.Tools
+    - Lofelt.NiceVibrations.Demo
+    - MoreMountains.Feedbacks.NiceVibrations
     - Assembly-CSharp
+    - Cinemachine
+    - MoreMountains.Feedbacks.PostProcessing
+    - MoreMountains.Feedbacks.MMTools
+    - MoreMountains.Feedbacks.TextMeshPro
+    - MoreMountains.Feedbacks.Cinemachine
+    - MoreMountains.Tools.Feedbacks
+    - MoreMountains.Feel.Demos.URP
+    - Sirenix.OdinInspector.CompatibilityLayer
+    - MoreMountains.Feel.Demos.HDRP
+    - Lofelt.NiceVibrations
+    - MoreMountains.Tools.TextMeshPro
+    - MoreMountains.Tools.Editor
     - PsdPlugin
     - Sirenix.OdinInspector.CompatibilityLayer.Editor
     - LunarConsoleEditor
+    - MoreMountains.Feedbacks.Editor
+    - MoreMountains.Tools.Feedbacks.Editor
+    - Lofelt.NiceVibrations.Editor
     - Sirenix.OdinInspector.Modules.UnityMathematics
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
