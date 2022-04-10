@@ -314,8 +314,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dbbbdd7e6d7e44118bdfeabd6260dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDistance: 3
-  maxDistance: 5
+  minDistance: 3.5
+  maxDistance: 6
   startDistance: 5
   weightedRandomValues:
   - 0.45
@@ -1457,7 +1457,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: -0.016992621, y: 0.000000017271068, z: 2.9352307e-10, w: 0.99985564}
+  m_LocalRotation: {x: -0.01699264, y: -0.000000017170361, z: -2.9181194e-10, w: 0.99985564}
   m_LocalPosition: {x: 0, y: 3.48, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2464,7 +2464,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4643735, y: 1}
+    m_SensorSize: {x: 1.7795527, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2480,7 +2480,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762027348}
-  m_LocalRotation: {x: -0.016992621, y: 0.000000017271068, z: 2.9352307e-10, w: 0.99985564}
+  m_LocalRotation: {x: -0.01699264, y: -0.000000017170361, z: -2.9181194e-10, w: 0.99985564}
   m_LocalPosition: {x: 0, y: 3.48, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5660,6 +5660,22 @@ PrefabInstance:
     - target: {fileID: 2963965418551059353, guid: 2f4f532aec259417d834278d7a975938, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3915126208861052944, guid: 2f4f532aec259417d834278d7a975938, type: 3}
+      propertyPath: m_Size.x
+      value: 1.7194259
+      objectReference: {fileID: 0}
+    - target: {fileID: 3915126208861052944, guid: 2f4f532aec259417d834278d7a975938, type: 3}
+      propertyPath: m_Size.y
+      value: 2.287783
+      objectReference: {fileID: 0}
+    - target: {fileID: 3915126208861052944, guid: 2f4f532aec259417d834278d7a975938, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00000047683716
+      objectReference: {fileID: 0}
+    - target: {fileID: 3915126208861052944, guid: 2f4f532aec259417d834278d7a975938, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.1402868
       objectReference: {fileID: 0}
     - target: {fileID: 3915126208861052945, guid: 2f4f532aec259417d834278d7a975938, type: 3}
       propertyPath: m_BodyType
