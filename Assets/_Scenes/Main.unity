@@ -350,7 +350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 56d6ebfd794a80d4a9ecf0d6faf2174e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a7dd28095c9e5545b6a77574ab5a38d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -378,7 +378,7 @@ Animator:
   m_GameObject: {fileID: 277639518}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 78bdee7f54056eb44a9a506c68a44e1e, type: 2}
+  m_Controller: {fileID: 9100000, guid: cb575347d10051f4985d80b096b20a59, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -776,7 +776,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 95ff5f323e7295e47983f8b4869780d8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9bf88b8568e8ec43a94835d1555edda, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
