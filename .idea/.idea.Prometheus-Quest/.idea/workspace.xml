@@ -1,102 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd4a0ea4-cecf-4373-9af3-03ea22bb584f" name="Changes" comment="Update: animations are added">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Lightning.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Lightning.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/LightningAnimation.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/LightningAnimation.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/DownAnimation.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/DownAnimation.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerAnimator.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerAnimator.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/StrikeAnimation.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/StrikeAnimation.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/UpAnimation.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/UpAnimation.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Torch.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Torch.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/TorchAnimation.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/TorchAnimation.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Background.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Background/cloud_big_1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Background/cloud_big_1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Background/cloud_big_2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Background/cloud_big_2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Background/cloud_small_1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Background/cloud_small_1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Background/cloud_small_2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Background/cloud_small_2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Background/clouds_distance.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Background/clouds_distance.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Lightning bolt.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Lightning bolt.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Torch.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Torch.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/LightningBolt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/LightningBolt.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/BackgroundGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/BackgroundGenerator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/DeadP.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/DeadP/Lightning0000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/DeadP/Lightning0000.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/DeadP/Lightning0001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/DeadP/Lightning0001.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromAnimDown.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromAnimDown/Down0000.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromAnimDown/Down0000.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromAnimDown/Down0007.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromAnimDown/Down0007.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromAnimDown/Down0014.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromAnimDown/Down0014.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromthAnim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromthAnim/Rigged.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromthAnim/frame0001.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromthAnim/frame0001.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromthAnim/frame0007.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromthAnim/frame0007.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromthAnim/frame0015.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromthAnim/frame0015.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromthAnim/frame0023.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromthAnim/frame0023.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromthAnim/frame0030.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Hero/PromthAnim/frame0030.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/lightning_bolt_spritesheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/lightning_bolt_spritesheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Up-nobg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Up-nobg.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Up-nobg.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Up-nobg.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_WebGL.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Prometheus-Quest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Prometheus-Quest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cap.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Hero.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Shield.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Shield.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/ClickArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/ClickArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/FinishPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/FinishPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameLoop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameLoop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/PickedUpObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/PickedUpObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacles/ObstacleGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/ObstacleGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Character.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/LightningStrike.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/LightningStrike.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LivesUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LivesUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ObjectsUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ObjectsUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Torch_Animation-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Torch_Animation-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-    </list>
+    <list default="true" id="dd4a0ea4-cecf-4373-9af3-03ea22bb584f" name="Changes" comment="WebGL build" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +91,7 @@
       <updated>1649083906469</updated>
       <workItem from="1649083918202" duration="7479000" />
       <workItem from="1649315990067" duration="1371000" />
-      <workItem from="1649488046402" duration="27816000" />
+      <workItem from="1649488046402" duration="28127000" />
     </task>
     <task id="LOCAL-00001" summary="Update: Base logic">
       <created>1649090714655</created>
@@ -230,7 +135,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649589857475</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Build">
+      <created>1649590006654</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649590006654</updated>
+    </task>
+    <task id="LOCAL-00008" summary="WebGL build">
+      <created>1649590169585</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649590169585</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +177,8 @@
     <MESSAGE value="Update: Smooth movement and objec'ts ui are added" />
     <MESSAGE value="Pick up objects are added" />
     <MESSAGE value="Update: animations are added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: animations are added" />
+    <MESSAGE value="Build" />
+    <MESSAGE value="WebGL build" />
+    <option name="LAST_COMMIT_MESSAGE" value="WebGL build" />
   </component>
 </project>
