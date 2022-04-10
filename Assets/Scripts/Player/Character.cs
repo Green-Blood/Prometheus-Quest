@@ -82,6 +82,7 @@ namespace Player
         public void CheckSpeed()
         {
             if (_obstacle == null) return;
+            _obstacle.StartFeedback();
             if (_obstacle.ObstacleEnum == ObstacleEnum.Wine)
             {
                 _playerMove.DecreaseSpeed();
