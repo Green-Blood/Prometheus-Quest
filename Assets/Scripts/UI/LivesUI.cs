@@ -33,7 +33,7 @@ namespace UI
         {
             for (int index = 0; index < _instantiatedLives.Count; index++)
             {
-                _instantiatedLives[index].SetActive(index <= health);
+                _instantiatedLives[index].SetActive(index < health);
             }
         }
     }

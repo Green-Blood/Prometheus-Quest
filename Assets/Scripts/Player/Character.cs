@@ -7,13 +7,18 @@ namespace Player
 {
     public sealed class Character : MonoBehaviour
     {
+        [SerializeField] private Animator animator;
+        [SerializeField] private GameObject downTorch;
+        
         public bool CanClick { get; private set; }
 
         private Obstacle _obstacle;
-        
+
         private PlayerMove _playerMove;
         private PlayerHealth _playerHealth;
         private LightningStrike _lightningStrike;
+        private static readonly int IsUp = Animator.StringToHash("IsUp");
+        private static readonly int Strike = Animator.StringToHash("Strike");
         public int Direction { get; private set; } = 1;
         public PickUpObject PickUpObject { get; private set; }
 
@@ -59,9 +64,17 @@ namespace Player
         }
 
         public void ChangeDirection() => Direction *= -1;
+        public void ChangeAnimation()
+        {
+            animator.SetBool(IsUp, false);
+            downTorch.SetActive(true);
+        }
+
+        public void StartStrikeAnimation() => animator.SetTrigger(Strike);
 
         public void CheckSpeed()
         {
+            if (_obstacle == null) return;
             if (_obstacle.ObstacleEnum == ObstacleEnum.Wine)
             {
                 _playerMove.DecreaseSpeed();

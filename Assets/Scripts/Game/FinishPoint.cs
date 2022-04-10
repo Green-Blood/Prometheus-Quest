@@ -1,18 +1,22 @@
 using Player;
 using UnityEngine;
 
-public sealed class FinishPoint : MonoBehaviour
+namespace Game
 {
-    [SerializeField] private bool isStart;
-
-    public bool IsStart => isStart;
-
-    private void OnTriggerEnter2D(Collider2D other)
+    public sealed class FinishPoint : MonoBehaviour
     {
-        other.TryGetComponent(out Character character);
+        [SerializeField] private bool isStart;
+
+        public bool IsStart => isStart;
+
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            character.ChangeDirection();
-            if (IsStart) Events.Instance.OnCharacterEnter?.Invoke();
+            other.TryGetComponent(out Character character);
+            {
+                character.ChangeDirection();
+                character.ChangeAnimation();
+                if (IsStart) Events.Instance.OnCharacterEnter?.Invoke();
+            }
         }
     }
 }

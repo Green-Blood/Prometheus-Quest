@@ -1,6 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
 using Enums;
-using Game;
 using UnityEngine;
 
 namespace UI
@@ -9,43 +9,81 @@ namespace UI
     {
         [SerializeField] private GameObject shieldPrefab;
         [SerializeField] private GameObject helmPrefab;
-        private List<GameObject> _pickedUpObjectsImages;
+        private Dictionary<PickUpEnum ,List<GameObject>> _pickedUpObjectsImages;
+        private List<GameObject> _instantiatedShieldList;
+        private List<GameObject> _instantiatedHelmList;
 
         public void Init()
         {
-            _pickedUpObjectsImages = new List<GameObject>();
+            _pickedUpObjectsImages = new Dictionary<PickUpEnum, List<GameObject>>();
+            _instantiatedHelmList = new List<GameObject>();
+            _instantiatedShieldList = new List<GameObject>();
         }
 
         public void InstantiatePickableObjects(PickUpEnum pickUpEnum)
         {
-            var instantiatedObject = pickUpEnum switch
+            GameObject instantiatedObject;
+            switch (pickUpEnum)
             {
-                PickUpEnum.Helm => Instantiate(helmPrefab, transform),
-                PickUpEnum.Shield => Instantiate(shieldPrefab, transform),
-                _ => null
-            };
+                case PickUpEnum.Helm:
+                    instantiatedObject = Instantiate(helmPrefab, transform);
+                    _instantiatedHelmList.Add(instantiatedObject);
+                    break;
+                case PickUpEnum.Shield:
+                    instantiatedObject = Instantiate(shieldPrefab, transform);
+                    _instantiatedShieldList.Add(instantiatedObject);
+                    break;
+                default:
+                    instantiatedObject = (GameObject)null;
+                    break;
+            }
 
             if (instantiatedObject != null)
             {
                 instantiatedObject.SetActive(false);
             }
-
-            _pickedUpObjectsImages.Add(instantiatedObject);
         }
 
         public void ShowObject(int index, PickUpEnum pickupObjectPickUpEnum)
         {
-            if (_pickedUpObjectsImages[index] != null)
+            // Shitcode should be changed
+            if (pickupObjectPickUpEnum == PickUpEnum.Helm)
             {
-                _pickedUpObjectsImages[index].SetActive(true);
+                foreach (var list in _instantiatedHelmList.Where(list => !list.activeSelf))
+                {
+                    list.SetActive(true);
+                    break;
+                }
             }
+            else if (pickupObjectPickUpEnum == PickUpEnum.Shield)
+            {
+                foreach (var list in _instantiatedShieldList.Where(list => !list.activeSelf))
+                {
+                    list.SetActive(true);
+                    break;
+                }
+            }
+
+
         }
 
         public void HideObject(int index, PickUpEnum pickUpEnum)
         {
-            if (_pickedUpObjectsImages[index] != null)
+            if (pickUpEnum == PickUpEnum.Helm)
             {
-                _pickedUpObjectsImages[index].SetActive(false);
+                foreach (var list in _instantiatedHelmList.Where(list => list.activeSelf))
+                {
+                    list.SetActive(false);
+                    break;
+                }
+            }
+            else if (pickUpEnum == PickUpEnum.Shield)
+            {
+                foreach (var list in _instantiatedShieldList.Where(list => list.activeSelf))
+                {
+                    list.SetActive(false);
+                    break;
+                }
             }
         }
     }

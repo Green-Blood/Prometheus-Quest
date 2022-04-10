@@ -7,23 +7,23 @@ namespace Obstacles
 {
     public sealed class ObstacleGenerator : MonoBehaviour
     {
-        [Title("Values")]
-        [SerializeField] private float minDistance = 3f;
+        [Title("Values")] [SerializeField] private float minDistance = 3f;
         [SerializeField] private float maxDistance = 8f;
         [SerializeField] private float startDistance = 10f;
         [SerializeField] private float[] weightedRandomValues = new[] { 0.45f, 0.45f, 0.05f };
 
-        [Title("References")] 
-        [SerializeField] private Obstacle wings;
+        [Title("References")] [SerializeField] private Obstacle wings;
         [SerializeField] private Obstacle wine;
         [SerializeField] private PickUpObject[] pickupObjects;
         [SerializeField] private FinishPoint finishPoint;
         [SerializeField] private ObjectsUI objectsUI;
 
+
         private void Start()
         {
             GenerateObstacles();
         }
+
         private void GenerateObstacles()
         {
             var distance = transform.position.y + startDistance;

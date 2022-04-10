@@ -35,8 +35,12 @@ namespace Game
             _pickupObjects.RemoveAt(lastIndex);
         }
 
-        public void UsePickedUpObject()
+        public bool UsePickedUpObject()
         {
+            if (_pickupObjects.Count == 0) return false;
+            Remove();
+            return true;
+
         }
     }
 }

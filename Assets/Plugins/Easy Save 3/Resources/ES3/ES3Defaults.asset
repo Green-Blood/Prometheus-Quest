@@ -31,9 +31,9 @@ MonoBehaviour:
     assemblyNames:
     - Assembly-CSharp-firstpass
     - LunarConsole
+    - Assembly-CSharp
     - Cinemachine
     - Sirenix.OdinInspector.CompatibilityLayer
-    - Assembly-CSharp
     - PsdPlugin
     - Sirenix.OdinInspector.CompatibilityLayer.Editor
     - LunarConsoleEditor

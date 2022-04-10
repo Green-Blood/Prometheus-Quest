@@ -1,3 +1,4 @@
+using Animations;
 using Player;
 using Sirenix.OdinInspector;
 using UI;
@@ -28,6 +29,7 @@ namespace Game
         [SerializeField] private WinLose winLose;
         [SerializeField] private ClickArea clickArea;
         [SerializeField] private ObjectsUI objectsUI;
+        [SerializeField] private LightningBolt lightningBolt;
 
         private Events _events;
         private PlayerMove _playerMove;
@@ -47,8 +49,8 @@ namespace Game
 
             _playerDeath = new PlayerDeath(winLose);
             _playerHealth = new PlayerHealth(playerHealth, _playerDeath);
-            _lightningStrike = new LightningStrike(lightningStrikeLimit, _playerHealth);
             _pickedUpObjects = new PickedUpObjects(objectsUI);
+            _lightningStrike = new LightningStrike(lightningStrikeLimit, _playerHealth, _pickedUpObjects, lightningBolt, character);
 
             character.Init(_playerMove, _playerHealth, _lightningStrike);
             livesUI.Init(_playerHealth, playerHealth);

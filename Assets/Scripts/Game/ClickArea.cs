@@ -1,3 +1,4 @@
+using Obstacles;
 using Player;
 using UnityEngine;
 
@@ -20,7 +21,9 @@ namespace Game
             _character.CheckSpeed();
 
             if (_character.PickUpObject == null) return;
+            
             _pickedUpObjects.Add(_character.PickUpObject);
+            _character.PickUpObject.gameObject.SetActive(false);
             _character.ResetPickedUpObject();
         }
     }
