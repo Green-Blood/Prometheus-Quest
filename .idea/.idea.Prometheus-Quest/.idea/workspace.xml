@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd4a0ea4-cecf-4373-9af3-03ea22bb584f" name="Changes" comment="Update: Quit button is added">
+    <list default="true" id="dd4a0ea4-cecf-4373-9af3-03ea22bb584f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Prometheus-Quest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Prometheus-Quest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/FinishPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/FinishPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameLoop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameLoop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649614479934</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Update">
+      <created>1649615615147</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1649615615147</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +312,7 @@
     <MESSAGE value="Update: Feel is added" />
     <MESSAGE value="Feedbacks are added" />
     <MESSAGE value="Update: Quit button is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Quit button is added" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>
